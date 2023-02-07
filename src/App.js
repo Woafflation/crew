@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import Reacto from './Reacto'
+import Button from './Reacto/Button'
+import logo from './logo.svg'
+import './App.css'
+
+// Hope we will cooperate!
+// Thanks for an interesting task!
+// Best regards,
+// Igor
 
 function App() {
+  const [isActive, setIsActive] = useState(false)
+
   return (
     <div className="App">
+      <Reacto isActive={isActive} setIsActive={setIsActive} />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <Button isActive={isActive} setIsActive={setIsActive} />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

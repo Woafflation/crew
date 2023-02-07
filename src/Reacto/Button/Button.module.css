@@ -1,0 +1,25 @@
+.button {
+  --border-color: #61dafb;
+  z-index: 100;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 40px;
+  width: 40px;
+  background: none;
+  border: 1px solid var(--border-color);
+  color: #fff;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  --border-color: rgba(97, 218, 251, 0.5);
+}
+
+.active {
+  background-color: #ffffff;
+  --border-color: #ffffff;
+  color: #282c34;
+}
